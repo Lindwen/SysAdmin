@@ -46,11 +46,13 @@ __Exemples :__
 
 * Ip de destination : 10.0.0.2/8
 * Masque : 255.0.0.0
-Le **ET** logique nous donne donc l'adresse réseau de destination : 10.0.0.0/8
+
+-> Le **ET** logique nous donne donc l'adresse réseau de destination : 10.0.0.0/8
 
 * IP de source : 10.0.0.1/8
 * Masque : 255.0.0.0
-Le **ET** logique nous donne donc l'adresse réseau source : 10.0.0.0/8
+
+-> Le **ET** logique nous donne donc l'adresse réseau source : 10.0.0.0/8
 
 Les deux adresses de réseau son identique donc le protocole ARP peut s’exécuter.
 
