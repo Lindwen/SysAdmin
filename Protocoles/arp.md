@@ -82,3 +82,27 @@ Captures de trames avec Wireshark
 
 ### ARP request
 ![ARP Request](https://lindwen.fr/img/arp%20request.png)
+
+Que voyons-nous ?
+* La machine WIN1 envoie un broadcast avec l'adresse IP de la machine WIN2 pour pouvoir récupérer son adresse MAC.
+* La Destination : Broadcast est reçu par tous les nœuds (machines) du même réseau (ici notre réseau est en LAN).
+* La source est l’adresse MAC de XP1.
+* Le type : ARP nous renseigne sur le type de protocole utilisé.
+* Hardware size : 6 octets -> adresse MAC
+* Protocole size : 4 octets -> adresse IP
+* Opcode : request (1) donc nous savons que nous allons envoyer une requête.
+* La Sender MAC address est l’adresse MAC de XP1 (celle qui envoie le broadcast) et Sender IP address son adresse IP.
+* La target MAC address est 00:00:00:00:00:00 car nous ne la connaissons pas encore mais nous connaissons l’adresse IP de la cible qui est ici la machine XP2 (Target IP address).
+
+### ARP reply
+![ARP Request](https://lindwen.fr/img/arp%20reply.png)
+
+Que voyons-nous ?
+* La machine WIN2 répond à la demande de WIN1.
+* La destination n’est plus en broadcast mais en unicast vu que la machine XP2 connait maintenant l’adresse MAC de XP1 (qu’elle garde en cache).
+* La source est l’adresse MAC de XP2.
+* Le type de protocole ne change pas c’est bien ARP.
+* padding sert de bourrage pour avoir le nombre minimal d’octet (46).
+*  Opcode a changé car maintenant c’est une réponse (reply), la machine XP2 répond à la requête de la XP1.
+*  Sender MAC address est l’adresse MAC de l’envoyeur ici XP2, et Sender IP address est son adresse IP.
+* Vu que XP1 a fait une requête, XP2 connait maintenant son adresse MAC, qui est la Target MAC address, et son IP Target address IP.
