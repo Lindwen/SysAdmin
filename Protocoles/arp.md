@@ -27,3 +27,34 @@ qui va annoncer le protocole de niveau supérieur.
   * Target MAC address : l’adresse MAC de la machine visée
   * Target IP address : l’adresse IP de la machine visée)
 * Le CRS (FCS) va contenir un code (binaire) afin de vérifier la non altéation des données.
+
+## Processus d'intersection logique (PIL)
+
+Le protocole ARP ne peut se faire que lorsqu’on se trouve sur le même réseau. Un poste ne
+peut pas envoyer un broadcast ARP que s’il s’assure que le destinataire se trouve sur le
+même réseau que lui.
+
+Le broadcast envoie une requête à toutes les machines sur le même réseau que lui, pour les
+questionner et trouvé la machine qui à l’IP de destination voulue et récupérer son adresse
+MAC.
+
+L’unicast est pour « parler » directement à une seule machine.
+Il peut savoir qu’il est sur le même réseau que lui, en faisant un et logique entre l’IP de
+destination et son masque :
+
+__Exemples :__
+
+* Ip de destination : 10.0.0.2/8
+* Masque : 255.0.0.0
+Le **ET** logique nous donne donc l'adresse réseau de destination : 10.0.0.0/8
+
+* IP de source : 10.0.0.1/8
+* Masque : 255.0.0.0
+Le **ET** logique nous donne donc l'adresse réseau source : 10.0.0.0/8
+
+Les deux adresses de réseau son identique donc le protocole ARP peut s’exécuter.
+
+Il peut donc utiliser le broadcast ARP.
+
+Le PIL est déclenché dès lors qu’il y a une intersection, si les deux adresses réseaux ne sont
+pas identiques, il doit voir s’il a une parcelle, si oui, il passe par elle, sinon il ne fais rien.
