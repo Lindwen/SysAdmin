@@ -19,8 +19,39 @@ Un octet est composé d'une succession de 8 bits (donc une adresse MAC = 48 bits
 
 * Le premier octet d'une adresse de classe A est définie par une valeur décimale entre 1 et 127.
 * La partie réseau d'une adresse de classe A est définie sur le premier octet.
+* Les trois octets restants définissent la partie machine.
 
 _Exemple :_
 * 10.0.0.2
   * Ici nous reconnaissons que l'adresse est une classe A car le premier octet a pour valeur 10 qui est compris entre 1 < 10 < 127.
 
+
+## Classe B
+
+* Le premier octet d'une adresse de classe B est définie par une valeur décimale entre 128 et 191.
+* La partie réseau d'une adresse de classe A est définie sur les deux premiers octets.
+* Les deux octets restants définissent la partie machine.
+
+_Exemple :_
+* 182.10.0.2
+  * Ici nous reconnaissons que l'adresse est une classe A car le premier octet a pour valeur 10 qui est compris entre 128 < 182 < 191.
+  
+  
+## Classe C
+
+* Le premier octet d'une adresse de classe B est définie par une valeur décimale entre 192 et 223.
+* La partie réseau d'une adresse de classe A est définie sur les trois premiers octets.
+* Le dernier octet restant défini la partie machine.
+
+_Exemple :_
+* 201.17.8.2
+  * Ici nous reconnaissons que l'adresse est une classe A car le premier octet a pour valeur 10 qui est compris entre 192 < 201 < 223.
+  
+  
+## Classe D
+La classe D est utilisée pour un certain type de protocole bien précis.
+
+* Le premier octet d'une adresse de classe B est définie par une valeur décimale entre 224 et 239.
+
+## Classe E
+Les adresses de classe E sont réservées par IANA à un usage non déterminé. Les adresses de classe E commencent toujours par la séquence de bits 1111, ils débutent donc en 240.0.0.0 et se terminent en 255.255.255.255.
