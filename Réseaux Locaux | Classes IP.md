@@ -17,8 +17,8 @@ Un octet est composé d'une succession de 8 bits (donc une adresse MAC = 48 bits
 
 ## Classe A
 
-Le premier octet d'une adresse de classe A est définie par une valeur décimale entre 1 et 127.
-La partie réseau d'une adresse de classe A est définie sur le premier octet.
+* Le premier octet d'une adresse de classe A est définie par une valeur décimale entre 1 et 127.
+* La partie réseau d'une adresse de classe A est définie sur le premier octet.
 
 _Exemple :_
 * 10.0.0.2
