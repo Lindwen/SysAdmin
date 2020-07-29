@@ -42,7 +42,7 @@ L’unicast est pour « parler » directement à une seule machine.
 Il peut savoir qu’il est sur le même réseau que lui, en faisant un et logique entre l’IP de
 destination et son masque :
 
-__Exemples :__
+_Exemples :_
 
 * Ip de destination : 10.0.0.2/8
 * Masque : 255.0.0.0
@@ -60,3 +60,16 @@ Il peut donc utiliser le broadcast ARP.
 
 Le PIL est déclenché dès lors qu’il y a une intersection, si les deux adresses réseaux ne sont
 pas identiques, il doit voir s’il a une parcelle, si oui, il passe par elle, sinon il ne fais rien.
+
+## Exemple avec deux machines
+
+*Configurations :*
+* Les deux machines sont situés sur le même réseau LAN et se nomme WIN1 et WIN2.
+* WIN1
+ * Adresse IP : 10.0.0.1/8
+ * Adresse MAC : 00:0c:29:06:77:d7
+* WIN2
+ * Adresse IP : 10.0.0.2/8
+ * Adresse MAC : 00:0c:29:C6:05:71
+ 
+
