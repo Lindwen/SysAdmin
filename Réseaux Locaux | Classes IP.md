@@ -53,5 +53,17 @@ La classe D est utilisée pour un certain type de protocole bien précis.
 
 * Le premier octet d'une adresse de classe B est définie par une valeur décimale entre 224 et 239.
 
+
 ## Classe E
 Les adresses de classe E sont réservées par IANA à un usage non déterminé. Les adresses de classe E commencent toujours par la séquence de bits 1111, ils débutent donc en 240.0.0.0 et se terminent en 255.255.255.255.
+
+
+# Résumé
+
+Classe | Bits de départ | Début | Fin | Notation CIDR par défaut | Masque de sous-réseau par défaut
+---|---|---|---|---|---
+Classe A | 0 | 0.0.0.0 |  | 126.255.255.2553(127 est réservé) | /8 | 255.0.0.0
+Classe B | 10 | 128.0.0.0 | 191.255.255.255 | /16 | 55 | 255.255.0.0
+Classe C | 110 | 192.0.0.0 | 223.255.255.255 | /24 | 255.255.255.0
+Classe D (multicast) | 1110 | 224.0.0.0 | 239.255.255.255 |  | 255.255.255.255
+Classe E (réservée) | 1111 | 240.0.0.0 | 255.255.255.255 |  | non défini 
