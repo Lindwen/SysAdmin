@@ -72,9 +72,13 @@ pas identiques, il doit voir s’il a une parcelle, si oui, il passe par elle, s
   * Adresse IP : 10.0.0.2/8
   * Adresse MAC : 00:0c:29:C6:05:71
  
-### Scénario:
+### Scénario
 Faire un ping de la machie WIN1 vers WIN2 : **ping 10.0.0.2**
 
 /!\ Ne pas oublier de vider le contenu des caches ARP des deux machines avec la commande **arp -d** sinon il ne fera pas un broadcast ARP donc on ne verra pas la trame du broadcast ARP.
 
 ### Résultat
+Captures de trames avec Wireshark
+
+### ARP request
+![ARP Request](https://www.dropbox.com/s/bxdsupad6kr9ust/arp%20request.png)
