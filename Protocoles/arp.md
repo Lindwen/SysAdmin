@@ -66,10 +66,10 @@ pas identiques, il doit voir s’il a une parcelle, si oui, il passe par elle, s
 *Configurations :*
 * Les deux machines sont situés sur le même réseau LAN et se nomme WIN1 et WIN2.
 * WIN1
- * Adresse IP : 10.0.0.1/8
- * Adresse MAC : 00:0c:29:06:77:d7
+  * Adresse IP : 10.0.0.1/8
+  * Adresse MAC : 00:0c:29:06:77:d7
 * WIN2
- * Adresse IP : 10.0.0.2/8
- * Adresse MAC : 00:0c:29:C6:05:71
+  * Adresse IP : 10.0.0.2/8
+  * Adresse MAC : 00:0c:29:C6:05:71
  
 
