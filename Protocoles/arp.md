@@ -2,7 +2,7 @@
 
 ## Quel est le rôle du protocole ARP ?
 
-Le protocole ARP (_Address Resolution Protocol_) a pour rôle d'associer une adresse IP et une adresse MAC, il permet de connapitre l'adresse physique d'une carte réseau correspondant à une adresse IP.
+Le protocole ARP (_Address Resolution Protocol_) a pour rôle d'associer une adresse IP et une adresse MAC, il permet de connaître l'adresse physique d'une carte réseau correspondant à une adresse IP.
 
 ## En-têtes protocole ARP
 
