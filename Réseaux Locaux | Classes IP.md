@@ -29,18 +29,18 @@ _Exemple :_
 ## Classe B
 
 * Le premier octet d'une adresse de classe B est définie par une valeur décimale entre 128 et 191.
-* La partie réseau d'une adresse de classe A est définie sur les deux premiers octets.
+* La partie réseau d'une adresse de classe B est définie sur les deux premiers octets.
 * Les deux octets restants définissent la partie machine.
 
 _Exemple :_
 * 182.10.0.2
-  * Ici nous reconnaissons que l'adresse est une classe A car le premier octet a pour valeur 10 qui est compris entre 128 < 182 < 191.
+  * Ici nous reconnaissons que l'adresse est une classe A car le premier octet a pour valeur 182 qui est compris entre 128 < 182 < 191.
   
   
 ## Classe C
 
-* Le premier octet d'une adresse de classe B est définie par une valeur décimale entre 192 et 223.
-* La partie réseau d'une adresse de classe A est définie sur les trois premiers octets.
+* Le premier octet d'une adresse de classe C est définie par une valeur décimale entre 192 et 223.
+* La partie réseau d'une adresse de classe C est définie sur les trois premiers octets.
 * Le dernier octet restant défini la partie machine.
 
 _Exemple :_
