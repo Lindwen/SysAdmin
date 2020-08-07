@@ -18,7 +18,7 @@ qui va annoncer le protocole de niveau supérieur.
   * Ether type = (0806)16 -> ARP
 * Paquet ARP :
   * Hardware Type : ici Ethernet II
-  * Protocol Type : le type de protocole (exemple : IP
+  * Protocol Type : le type de protocole (exemple : IP)
   * Hardware size : le nombre d’octet de l’adresse MAC (6)
   * Protocol size : le nombre d’octet de l’adresse IP (4)
   * Opcode : le type de requête (exemple : request / reply)
